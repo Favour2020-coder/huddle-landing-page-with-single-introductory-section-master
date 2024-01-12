@@ -1,0 +1,144 @@
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(./images/bg-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 14px;
+}
+
+.logo {
+    width: 90%;
+    margin: auto;
+    height: 150px;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 170px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    padding-bottom: 0.5rem;
+}
+
+.main-content {
+    display: flex;
+    gap: 4rem;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px ;
+    padding-left: 20px;
+    max-width: 450px;
+    gap: 0.2rem;
+}
+
+h1 {
+    font-family: 'Poppins' , sans-serif;
+    line-height: 2.5rem;
+    margin: 0;
+    padding-bottom: 0;
+    font-size: 2.3rem;
+}
+
+p {
+    padding-top: 0rem;
+    font-size: 1rem;
+}
+
+button {
+    padding: 15px 100px;
+    margin: 0;
+    border-radius: 2rem;
+    color:  hsl(257, 40%, 49%);
+}
+
+.icon {
+    width: 100%;
+    margin: auto;
+    height: 70px;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border: solid white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+@media (max-width: 768px)  {
+
+    body {
+        max-width: 100vw;
+        background-color: hsl(257, 40%, 49%);
+        background-image: url(./images/bg-mobile.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+
+    .main-content {
+        display: grid;
+        place-items: center;
+        gap: 0.5rem;
+        margin: 0;
+        border: 0;
+    }
+
+    .content-img  {
+        grid-row: 1;
+        width: 70vw;
+    }  
+
+    .content-img img {
+        width: 100%;
+    }
+
+    .main-content {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+
+    .icon {
+        display: flex;
+        justify-content: center;
+    }
+
+}
